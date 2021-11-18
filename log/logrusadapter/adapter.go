@@ -5,7 +5,7 @@ package logrusadapter
 import (
 	"context"
 
-	"github.com/nappspt/schemapgx/v4"
+	"github.com/nappspt/schemapgx"
 	"github.com/sirupsen/logrus"
 )
 

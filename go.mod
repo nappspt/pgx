@@ -1,4 +1,4 @@
-module github.com/nappspt/schemapgx/v4
+module github.com/nappspt/schemapgx
 
 go 1.13
 

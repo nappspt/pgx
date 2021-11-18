@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/jackc/pgconn"
-	"github.com/nappspt/schemapgx/v4"
+	"github.com/nappspt/schemapgx"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,7 +5,7 @@ package log15adapter
 import (
 	"context"
 
-	"github.com/nappspt/schemapgx/v4"
+	"github.com/nappspt/schemapgx"
 )
 
 // Log15Logger interface defines the subset of

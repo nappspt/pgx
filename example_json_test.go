@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/nappspt/schemapgx/v4"
+	"github.com/nappspt/schemapgx"
 )
 
 func Example_JSON() {
