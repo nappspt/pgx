@@ -12,7 +12,7 @@ import (
 	"github.com/jackc/pgconn/stmtcache"
 	"github.com/jackc/pgproto3/v2"
 	"github.com/jackc/pgtype"
-	"github.com/jackc/pgx/v4/internal/sanitize"
+	"github.com/napps/pgx/v4/internal/sanitize"
 )
 
 // ConnConfig contains all the options used to establish a connection. It must be created by ParseConfig and

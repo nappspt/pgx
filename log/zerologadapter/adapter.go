@@ -4,7 +4,7 @@ package zerologadapter
 import (
 	"context"
 
-	"github.com/jackc/pgx/v4"
+	"github.com/napps/pgx/v4"
 	"github.com/rs/zerolog"
 )
 
