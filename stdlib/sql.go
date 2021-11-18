@@ -392,6 +392,10 @@ func (c *Conn) ExecContext(ctx context.Context, query string, argsV []driver.Nam
 		return nil, driver.ErrBadConn
 	}
 
+	if err := CheckSetSchemaCtx(c, query, ctx); err != nil {
+		return nil, err
+	}
+
 	args := namedValueToInterface(argsV)
 
 	commandTag, err := c.conn.Exec(ctx, query, args...)
@@ -407,6 +411,10 @@ func (c *Conn) ExecContext(ctx context.Context, query string, argsV []driver.Nam
 func (c *Conn) QueryContext(ctx context.Context, query string, argsV []driver.NamedValue) (driver.Rows, error) {
 	if c.conn.IsClosed() {
 		return nil, driver.ErrBadConn
+	}
+
+	if err := CheckSetSchemaCtx(c, query, ctx); err != nil {
+		return nil, err
 	}
 
 	args := []interface{}{databaseSQLResultFormats}
@@ -855,4 +863,28 @@ func ReleaseConn(db *sql.DB, conn *pgx.Conn) error {
 	}
 
 	return tx.Rollback()
+}
+
+func CheckSetSchemaCtx(c *Conn, query string, ctx context.Context) error {
+	// Avoid setting schema
+	if ctx != nil && strings.HasPrefix(query, "set schema ") {
+		var schemaInjection string
+		appID := ctx.Value("appID")
+
+		if appID != nil {
+
+			schemaInjection = fmt.Sprintf("set schema '%s';", appID)
+
+			_, err := c.ExecContext(ctx, schemaInjection, nil)
+
+			if err != nil {
+				if pgconn.SafeToRetry(err) {
+					return driver.ErrBadConn
+				}
+				return err
+			}
+		}
+	}
+
+	return nil
 }
