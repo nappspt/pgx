@@ -14,8 +14,8 @@ import (
 
 	"github.com/Masterminds/semver/v3"
 	"github.com/jackc/pgconn"
-	"github.com/napps/pgx/v4"
-	"github.com/napps/pgx/v4/stdlib"
+	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/pgx/v4/stdlib"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

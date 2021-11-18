@@ -6,7 +6,7 @@ import (
 
 	"github.com/jackc/pgconn"
 	"github.com/jackc/puddle"
-	"github.com/napps/pgx/v4"
+	"github.com/nappspt/pgx/v4"
 )
 
 // Conn is an acquired *pgx.Conn from a Pool.

@@ -65,7 +65,7 @@ import (
 
 	"github.com/jackc/pgconn"
 	"github.com/jackc/pgtype"
-	"github.com/napps/pgx/v4"
+	"github.com/nappspt/pgx/v4"
 )
 
 // Only intrinsic types should be binary format with database/sql.

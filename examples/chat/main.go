@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/napps/pgx/v4/pgxpool"
+	"github.com/nappspt/pgx/v4/pgxpool"
 )
 
 var pool *pgxpool.Pool

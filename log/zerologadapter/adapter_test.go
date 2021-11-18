@@ -5,8 +5,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/napps/pgx/v4"
-	"github.com/napps/pgx/v4/log/zerologadapter"
+	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/pgx/v4/log/zerologadapter"
 	"github.com/rs/zerolog"
 )
 

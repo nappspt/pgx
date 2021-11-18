@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/napps/pgx/v4"
-	"github.com/napps/pgx/v4/log/log15adapter"
-	"github.com/napps/pgx/v4/pgxpool"
+	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/pgx/v4/log/log15adapter"
+	"github.com/nappspt/pgx/v4/pgxpool"
 	log "gopkg.in/inconshreveable/log15.v2"
 )
 

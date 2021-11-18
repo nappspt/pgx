@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/jackc/pgconn"
-	"github.com/napps/pgx/v4"
+	"github.com/nappspt/pgx/v4"
 )
 
 func TestLargeObjects(t *testing.T) {

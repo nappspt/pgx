@@ -5,7 +5,7 @@ package log15adapter
 import (
 	"context"
 
-	"github.com/napps/pgx/v4"
+	"github.com/nappspt/pgx/v4"
 )
 
 // Log15Logger interface defines the subset of
