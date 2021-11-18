@@ -4,15 +4,14 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/nappspt/schemapgx/v4/sanitize"
 	"strconv"
 	"strings"
 	"time"
 
 	"github.com/jackc/pgconn"
 	"github.com/jackc/pgconn/stmtcache"
-	"github.com/jackc/pgproto3/v2"
 	"github.com/jackc/pgtype"
-	"github.com/nappspt/schemapgx/v4/internal/sanitize"
 )
 
 // ConnConfig contains all the options used to establish a connection. It must be created by ParseConfig and

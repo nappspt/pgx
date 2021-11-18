@@ -1,10 +1,9 @@
 package sanitize_test
 
 import (
+	"github.com/nappspt/schemapgx/v4/sanitize"
 	"testing"
 	"time"
-
-	"github.com/nappspt/schemapgx/v4/internal/sanitize"
 )
 
 func TestNewQuery(t *testing.T) {
@@ -106,8 +105,8 @@ func TestNewQuery(t *testing.T) {
 
 func TestQuerySanitize(t *testing.T) {
 	successfulTests := []struct {
-		query    sanitize.Query
-		args     []interface{}
+		query sanitize.Query
+		args  []interface{}
 		expected string
 	}{
 		{
@@ -175,8 +174,8 @@ func TestQuerySanitize(t *testing.T) {
 	}
 
 	errorTests := []struct {
-		query    sanitize.Query
-		args     []interface{}
+		query sanitize.Query
+		args  []interface{}
 		expected string
 	}{
 		{
