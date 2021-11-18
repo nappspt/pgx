@@ -2,7 +2,7 @@ package pgxpool
 
 import (
 	"github.com/jackc/pgconn"
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 )
 
 type errBatchResults struct {

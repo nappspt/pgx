@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 )
 
 // TestingLogger interface defines the subset of testing.TB methods used by this

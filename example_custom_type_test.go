@@ -8,7 +8,7 @@ import (
 	"strconv"
 
 	"github.com/jackc/pgtype"
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 )
 
 var pointRegexp *regexp.Regexp = regexp.MustCompile(`^\((.*),(.*)\)$`)

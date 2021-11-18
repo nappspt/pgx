@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/jackc/pgconn"
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 )
 
 // Tx represents a database transaction acquired from a Pool.

@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nappspt/pgx/v4"
-	"github.com/nappspt/pgx/v4/pgxpool"
+	"github.com/nappspt/schemapgx/v4"
+	"github.com/nappspt/schemapgx/v4/pgxpool"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

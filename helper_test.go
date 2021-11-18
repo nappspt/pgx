@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/jackc/pgconn"
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 	"github.com/stretchr/testify/require"
 )
 

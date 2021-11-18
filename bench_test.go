@@ -15,7 +15,7 @@ import (
 	"github.com/jackc/pgconn"
 	"github.com/jackc/pgconn/stmtcache"
 	"github.com/jackc/pgtype"
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 	"github.com/stretchr/testify/require"
 )
 

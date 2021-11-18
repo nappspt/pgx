@@ -4,7 +4,7 @@ package zapadapter
 import (
 	"context"
 
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

@@ -4,7 +4,7 @@ package zerologadapter
 import (
 	"context"
 
-	"github.com/nappspt/pgx/v4"
+	"github.com/nappspt/schemapgx/v4"
 	"github.com/rs/zerolog"
 )
 

@@ -1,4 +1,4 @@
-module github.com/nappspt/pgx/v4
+module github.com/nappspt/schemapgx/v4
 
 go 1.13
 
